@@ -34,8 +34,10 @@ import github from '../assets/github.png'
 import teamwork from '../assets/teamwork.jpg'
 import profileNew from '../assets/profile-new.png'
 import gmail from '../assets/gmail.png'
+import youtube from '../assets/youtube-clone.jpg'
 
 export default {
+  youtube,
   gmail,
   profileNew,
   teamwork,

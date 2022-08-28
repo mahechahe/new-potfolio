@@ -56,6 +56,13 @@ const initialStateData = [
     github: 'https://github.com/mahechahe/CryptoApi',
     image: images.cryptoVerse
   },
+  {
+    title: 'Youtube clone',
+    description: 'Youtube clone using React and its consuming its API in FAST API.',
+    link: 'https://rad-bavarois-95e2c2.netlify.app/',
+    github: 'https://github.com/mahechahe/CryptoApi',
+    image: images.youtube
+  }
 ]
 
 
