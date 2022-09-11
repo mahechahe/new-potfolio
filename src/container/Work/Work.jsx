@@ -51,17 +51,24 @@ const initialStateData = [
   },
   {
     title: 'Cryptoverse',
-    description: 'The latest cryptocurrency news. FAST API Cryptocurrencies',
+    description: 'The latest cryptocurrency news. FAST API Cryptocurrencies, Using React and MUI',
     link: 'https://crypto-api-gray.vercel.app/',
     github: 'https://github.com/mahechahe/CryptoApi',
     image: images.cryptoVerse
   },
   {
     title: 'Youtube clone',
-    description: 'Youtube clone using React and its consuming its API in FAST API.',
+    description: 'Youtube clone using React and its consuming its API in FAST API. React and Using React-hooks',
     link: 'https://rad-bavarois-95e2c2.netlify.app/',
     github: 'https://github.com/mahechahe/CryptoApi',
     image: images.youtube
+  },
+  {
+    title: 'Social Media App',
+    description: 'Social network web application. In this application developed with the MERN stack',
+    link: 'https://preeminent-tulumba-b6c7d1.netlify.app/',
+    github: 'https://github.com/mahechahe/CryptoApi',
+    image: images.socialMedia
   }
 ]
 

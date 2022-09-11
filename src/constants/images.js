@@ -35,8 +35,10 @@ import teamwork from '../assets/teamwork.jpg'
 import profileNew from '../assets/profile-new.png'
 import gmail from '../assets/gmail.png'
 import youtube from '../assets/youtube-clone.jpg'
+import socialMedia from '../assets/social-media-app.jpg'
 
 export default {
+  socialMedia,
   youtube,
   gmail,
   profileNew,
