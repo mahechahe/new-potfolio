@@ -69,7 +69,14 @@ const initialStateData = [
     link: 'https://preeminent-tulumba-b6c7d1.netlify.app/',
     github: 'https://github.com/mahechahe/CryptoApi',
     image: images.socialMedia
-  }
+  },
+  {
+    title: 'React Native App ProNef',
+    description: 'Buy, store, collect NFTs, exchange & earn crypto. Join 25+ million people using ProNef Marketplace',
+    link: 'https://showcase-native-gules.vercel.app/',
+    github: 'https://github.com/mahechahe/showcase-native',
+    image: images.scenesNative
+  },
 ]
 
 

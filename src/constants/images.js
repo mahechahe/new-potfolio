@@ -36,8 +36,10 @@ import profileNew from '../assets/profile-new.png'
 import gmail from '../assets/gmail.png'
 import youtube from '../assets/youtube-clone.jpg'
 import socialMedia from '../assets/social-media-app.jpg'
+import scenesNative from '../assets/scene.png'
 
 export default {
+  scenesNative,
   socialMedia,
   youtube,
   gmail,
