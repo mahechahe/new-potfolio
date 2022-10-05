@@ -1,84 +1,92 @@
 import React, { useState } from "react";
 import { AiFillEye, AiFillGithub, AiOutlineStar } from "react-icons/ai";
-import {images} from '../../constants/index'
+import { images } from "../../constants/index";
 import { motion } from "framer-motion";
-import { AppWrap } from '../../wraper/AppWrap'
+import { AppWrap } from "../../wraper/AppWrap";
 import { MotionWrap } from "../../wraper/MotionWrap";
 import "./Work.scss";
 
 const initialStateData = [
   {
-    title: 'The Movie database',
-    description: 'Website that lists the best movies of the moment',
-    link: 'https://movies-tb.vercel.app/',
-    github: 'https://github.com/mahechahe/movies-tb',
-    image: images.movieDataBase
+    title: "The Movie database",
+    description: "Website that lists the best movies of the moment",
+    link: "https://movies-tb.vercel.app/",
+    github: "https://github.com/mahechahe/movies-tb",
+    image: images.movieDataBase,
   },
   {
-    title: 'Netflix clone',
-    description: 'Netflix clone with firebase authentication',
-    link: 'https://netflix-copy-two.vercel.app/',
-    github: 'https://github.com/mahechahe/netflix-copy',
-    image: images.netflixClone
+    title: "Netflix clone",
+    description: "Netflix clone with firebase authentication",
+    link: "https://netflix-copy-two.vercel.app/",
+    github: "https://github.com/mahechahe/netflix-copy",
+    image: images.netflixClone,
   },
   {
-    title: 'Dashboard app',
-    description: 'Application with multiple actions and components so you can interact',
-    link: 'https://sycfusion-dashpoard-app.netlify.app/',
-    github: '',
-    image: images.dashboardApp
+    title: "Dashboard app",
+    description:
+      "Application with multiple actions and components so you can interact",
+    link: "https://sycfusion-dashpoard-app.netlify.app/",
+    github: "",
+    image: images.dashboardApp,
   },
   {
-    title: 'Giffy',
-    description: 'Search your favorite gifs and discover the latest trends. a fully optimized website and deployed in Vercel',
-    link: 'https://giff-react.vercel.app/',
-    github: 'https://github.com/mahechahe/giffy-react',
-    image: images.giffy
+    title: "Giffy",
+    description:
+      "Search your favorite gifs and discover the latest trends. a fully optimized website and deployed in Vercel",
+    link: "https://giff-react.vercel.app/",
+    github: "https://github.com/mahechahe/giffy-react",
+    image: images.giffy,
   },
   {
-    title: 'Todo list',
-    description: 'All list made with React and its hooks. Focusing mainly on its useReducer hook',
-    link: 'https://todo-list-reducer.vercel.app/',
-    github: 'https://github.com/mahechahe/todo-list-reducer',
-    image: images.todoList
+    title: "Booking App",
+    description:
+      "Booking App web application, you can see hotels, apartments and rooms available in any city. Fullstack web application using the MERN Stack. If you register you can add hotels and rooms. The Admin Booking App is: ",
+    otherLink: "https://snazzy-manatee-72f0a5.netlify.app",
+    link: "https://fascinating-salamander-70c594.netlify.app/",
+    github: "https://github.com/mahechahe/booking-app",
+    image: images.todoList,
   },
   {
-    title: 'Travel advisor',
-    description: 'Search for restaurants, bars and tourist areas from anywhere in the world. Google Developer API',
-    link: 'https://travel-advisor-rosy.vercel.app/',
-    github: 'https://github.com/mahechahe/travel_advisor',
-    image: images.travelAdvisor
+    title: "Travel advisor",
+    description:
+      "Search for restaurants, bars and tourist areas from anywhere in the world. Google Developer API",
+    link: "https://travel-advisor-rosy.vercel.app/",
+    github: "https://github.com/mahechahe/travel_advisor",
+    image: images.travelAdvisor,
   },
   {
-    title: 'Cryptoverse',
-    description: 'The latest cryptocurrency news. FAST API Cryptocurrencies, Using React and MUI',
-    link: 'https://crypto-api-gray.vercel.app/',
-    github: 'https://github.com/mahechahe/CryptoApi',
-    image: images.cryptoVerse
+    title: "Cryptoverse",
+    description:
+      "The latest cryptocurrency news. FAST API Cryptocurrencies, Using React and MUI",
+    link: "https://crypto-api-gray.vercel.app/",
+    github: "https://github.com/mahechahe/CryptoApi",
+    image: images.cryptoVerse,
   },
   {
-    title: 'Youtube clone',
-    description: 'Youtube clone using React and its consuming its API in FAST API. React and Using React-hooks',
-    link: 'https://rad-bavarois-95e2c2.netlify.app/',
-    github: 'https://github.com/mahechahe/CryptoApi',
-    image: images.youtube
+    title: "Youtube clone",
+    description:
+      "Youtube clone using React and its consuming its API in FAST API. React and Using React-hooks",
+    link: "https://rad-bavarois-95e2c2.netlify.app/",
+    github: "https://github.com/mahechahe/CryptoApi",
+    image: images.youtube,
   },
   {
-    title: 'Social Media App',
-    description: 'Social network web application. In this application developed with the MERN stack',
-    link: 'https://preeminent-tulumba-b6c7d1.netlify.app/',
-    github: 'https://github.com/mahechahe/CryptoApi',
-    image: images.socialMedia
+    title: "Social Media App",
+    description:
+      "Social network web application. In this application developed with the MERN stack",
+    link: "https://preeminent-tulumba-b6c7d1.netlify.app/",
+    github: "https://github.com/mahechahe/CryptoApi",
+    image: images.socialMedia,
   },
   {
-    title: 'React Native App ProNef',
-    description: 'Buy, store, collect NFTs, exchange & earn crypto. Join 25+ million people using ProNef Marketplace',
-    link: 'https://showcase-native-gules.vercel.app/',
-    github: 'https://github.com/mahechahe/showcase-native',
-    image: images.scenesNative
+    title: "React Native App ProNef",
+    description:
+      "Buy, store, collect NFTs, exchange & earn crypto. Join 25+ million people using ProNef Marketplace",
+    link: "https://showcase-native-gules.vercel.app/",
+    github: "https://github.com/mahechahe/showcase-native",
+    image: images.scenesNative,
   },
-]
-
+];
 
 const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -147,11 +155,18 @@ const Work = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{data.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>
-                {data.description}
+                {data.description}{" "}
+                {data.otherLink && (
+                  <a className="p-text" target="_blank" style={{ fontWeight: "bold", textDecoration: 'none' }} href={data?.otherLink} rel="noreferrer">
+                    Admin App
+                  </a>
+                )}
               </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text" style={{color: 'yellow'}}><AiOutlineStar/></p>
+                <p className="p-text" style={{ color: "yellow" }}>
+                  <AiOutlineStar />
+                </p>
               </div>
             </div>
           </div>
@@ -161,9 +176,8 @@ const Work = () => {
   );
 };
 
-
 export default AppWrap(
-  MotionWrap(Work, 'app__works'),
-  'work',
-  'app__primarybg',
+  MotionWrap(Work, "app__works"),
+  "work",
+  "app__primarybg"
 );

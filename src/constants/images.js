@@ -20,8 +20,8 @@ import circle from '../assets/circle.svg';
 import movieDataBase from '../assets/the-movie-database.jpg';
 import netflixClone from '../assets/netflix-clone.jpg';
 import dashboardApp from '../assets/dashboard-app.jpg';
-import giffy from '../assets/Giffy.jpg';
-import todoList from '../assets/todo-list-reducer.png';
+import giffy from '../assets/giphy.jpg';
+import todoList from '../assets/booking (1).png';
 import travelAdvisor from '../assets/travel-advisor.jpg';
 import cryptoVerse from '../assets/cryptoverse.jpg';
 
@@ -34,8 +34,8 @@ import github from '../assets/github.png'
 import teamwork from '../assets/teamwork.jpg'
 import profileNew from '../assets/profile-new.png'
 import gmail from '../assets/gmail.png'
-import youtube from '../assets/youtube-clone.jpg'
-import socialMedia from '../assets/social-media-app.jpg'
+import youtube from '../assets/youtube.png'
+import socialMedia from '../assets/social-media.png'
 import scenesNative from '../assets/native.jpg'
 
 export default {
